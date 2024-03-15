@@ -1,0 +1,426 @@
+:root {
+  --accent-color: #f8ca1a;
+  --main-border: 1px solid var(--accent-color);
+  --hover-color: #f8cc1ae2;
+}
+html,
+body {
+  font-size: 20px;
+}
+.btn {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.header nav div.collapse a {
+  color: white;
+}
+
+.header nav div.collapse a.active {
+  color: white;
+  outline: var(--main-border);
+}
+.header nav div.collapse li:not(.header nav div.collapse li:last-of-type) {
+  margin-right: 30px;
+}
+.header nav div.collapse li:hover {
+  outline: var(--main-border);
+  transition: 1s;
+}
+.header nav button.navbar-toggler {
+  background-color: var(--accent-color);
+  color: transparent;
+  border-radius: 0;
+  padding: 0.25rem;
+}
+.header div.triangle {
+  border: 30px solid transparent;
+  border-top-color: #212529;
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  z-index: 10;
+  position: relative;
+}
+.header .carousel-slide {
+  background: linear-gradient(#f8cc1abd, #f8cc1ada), url(../images/Slider.png);
+  height: 70vh;
+  padding: 100px 50px;
+  margin-top: -60px;
+}
+#carouselExampleCaptions {
+  height: 50vh;
+}
+.carousel-caption {
+  height: 100%;
+}
+
+.what-we-do {
+  background-color: #212529;
+  color: white;
+}
+.what-we-do h2 + p,
+.what-we-do h3 {
+  color: var(--accent-color);
+}
+.what-we-do h2 + p {
+  border-bottom: 1px solid white;
+  padding: 25px;
+}
+
+.what-we-do img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: 0.2s;
+}
+.what-we-do img:hover {
+  transform: scale(1.1);
+}
+.portfolio {
+  background-color: var(--accent-color);
+}
+.portfolio h2 + p {
+  color: #212529;
+  border-bottom: 1px solid black;
+  padding: 25px;
+}
+.buttons + .row {
+  color: white;
+}
+
+.portfolio .info h3,
+.portfolio .info span {
+  color: var(--accent-color);
+}
+.portfolio .info h3 {
+  border-bottom: 1px solid var(--accent-color);
+  padding: 25px;
+}
+.portfolio .info span {
+  display: inline-block;
+  width: 100px;
+}
+.info li,
+p {
+  color: white;
+}
+
+.portfolio .card-plus {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio .card-plus i {
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: -80px;
+  left: 44%;
+  z-index: 10;
+  opacity: 0;
+  transition: 0.5s;
+}
+.portfolio .card-plus:hover i {
+  top: 100px;
+  opacity: 1;
+}
+.portfolio .card-plus .bg-colour {
+  height: 260px;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 260px;
+  transition: 0.5s;
+}
+.portfolio .card-plus .card-body {
+  z-index: 9;
+}
+.portfolio .card-plus:hover .bg-colour {
+  top: 0;
+}
+
+.About h2 {
+  color: white;
+}
+.About h3 {
+  color: var(--accent-color);
+  font-size: 1rem;
+  margin: 10px 0;
+}
+.About h2 + p {
+  color: var(--accent-color);
+  border-bottom: 1px solid white;
+  padding: 25px;
+}
+
+.About a ion-icon {
+  color: black;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  font-size: 15px;
+  padding: 8px;
+}
+
+.About a:not(.About a:last-of-type) {
+  margin-right: 12px;
+}
+.About .child1,
+.child2,
+.child3,
+.child4 {
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.About .about-colour {
+  position: relative;
+  overflow: hidden;
+}
+.About .about-colour .bg-colour {
+  height: 100%;
+  background: var(--hover-color);
+  width: 100%;
+  position: absolute;
+  bottom: -100%;
+  opacity: 0;
+  transition: 0.2s;
+}
+.About .about-colour:hover .bg-colour {
+  bottom: 0;
+  opacity: 1;
+}
+
+.About .about-colour .text h4 {
+  font-size: 1.5rem;
+  padding-top: 60px;
+}
+.About .about-colour .text p {
+  font-size: 0.8rem;
+}
+
+.prog h3 {
+  color: var(--accent-color);
+}
+.prog h2 {
+  color: var(--accent-color);
+}
+.prog p {
+  color: #212529;
+  font-size: 0.8rem;
+}
+.prog .progress {
+  height: 40px;
+}
+.prog ul {
+  padding: 0;
+  height: 100%;
+}
+.prog .progress-bar {
+  background-color: var(--accent-color);
+  color: black;
+  font-weight: bold;
+}
+.prog button {
+  background-color: var(--accent-color);
+}
+
+.Elegance {
+  background-color: var(--accent-color);
+}
+.Elegance div button {
+  background-color: var(--accent-color);
+  padding: 20px 70px;
+}
+.Elegance div {
+  border: #212529;
+}
+.Elegance div button:hover {
+  color: white;
+  background-color: #212529;
+}
+.Clients h2 {
+  color: white;
+}
+.Clients h2 + p {
+  color: var(--accent-color);
+  padding: 25px;
+  border-bottom: 1px solid white;
+}
+.Clients .text-client1 p,
+.text-client2 p,
+.text-client3 p {
+  background-color: var(--accent-color);
+  color: #212529;
+  padding: 10px;
+}
+.Clients h4 {
+  color: var(--accent-color);
+  font-size: 1rem;
+}
+.Clients h5 {
+  color: var(--accent-color);
+  font-size: 0.8rem;
+}
+.Clients img {
+  width: 80px;
+}
+.Clients .cli {
+  display: flex;
+}
+
+.Clients .cli-name {
+  padding: 10px;
+}
+.Clients .last-text {
+  font-size: 1.5rem;
+}
+.Price {
+  background-color: var(--accent-color);
+}
+.Price h2 {
+  margin-top: 30px;
+}
+.Price h2 + p {
+  color: #212529;
+}
+.Price h3 {
+  color: white;
+}
+.Price .price1,
+.price2,
+.price3 {
+  border-radius: 1px solid white;
+}
+
+.Price li {
+  color: #2125298f;
+  padding-top: 40px;
+
+  list-style: none;
+  border-bottom: 1px solid #212529;
+  padding-bottom: 15px;
+  font-size: 1.3rem;
+}
+.Price .pri1,
+.pri2,
+.pri3 {
+  padding-right: 40px;
+}
+.Price span {
+  color: #212529;
+}
+
+.Price div button {
+  color: var(--accent-color);
+  padding: 15px 40px;
+  margin-bottom: 20px;
+}
+.Price div button:hover {
+  background-color: var(--accent-color);
+  color: #212529;
+}
+.Price .last-text p {
+  color: #212529;
+  font-size: 1.3rem;
+}
+.Price .last-text div button {
+  color: #212529;
+  background-color: var(--accent-color);
+}
+
+.Price .last-text div button:hover {
+  color: white;
+  background-color: #212529;
+}
+.newsletter {
+  background-image: url(../images/brand-bg.png);
+  background-size: cover;
+  height: 40vh;
+}
+.newsletter h3 {
+  color: var(--accent-color);
+  border-bottom: 1px solid white;
+}
+.newsletter col-auto {
+  padding: 5px 20px;
+  background-color: var(--accent-color);
+}
+.newsletter col-auto:hover {
+  background-color: white;
+}
+.contact {
+  background-color: var(--accent-color);
+}
+.contact h4 {
+  color: rgba(0, 0, 0, 0.24);
+}
+.contact h2 + p {
+  color: #212529;
+  border-bottom: 1px solid #212529;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.contact .form {
+  padding: 20px;
+}
+.contact .form div button {
+  color: #21252969;
+  border: 1px solid #212529ad;
+  padding: 10px 30px;
+  margin-top: 25px;
+}
+.contact .form div button:hover {
+  background-color: var(--accent-color);
+  transition: 0.1s;
+}
+.contact address {
+  font-size: 1.3rem;
+  color: white;
+  padding-top: 80px;
+}
+
+
+.contact address + a{
+  text-decoration: none;
+  color: #212529; 
+}
+
+.contact p{
+  padding-top: 20px;
+}
+
+.contact p+p{
+  padding-top: 0;
+}
+
+.contact .icon h4 {
+  color: #212529;
+  border-bottom: 1px solid #212529;
+  padding-bottom: 30px;
+}
+
+.contact .ion-icon {
+  margin-top: 50px;
+}
+.contact .ion-icon ion-icon {
+  padding: 15px;
+  background-color: white;
+  border-radius: 50%;
+  color: var(--accent-color);
+  font-size: 30px;
+}
+.contact .ion-icon a:not(.contact .ion-icon a:last-of-type) {
+  padding-right: 20px;
+}
+.contact .ion-icon ion-icon:hover {
+  background-color: black;
+}
+
+.footer p {
+  color: white;
+  padding: 5px;
+  font-size: 0.9rem;
+}
